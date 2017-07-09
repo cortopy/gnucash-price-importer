@@ -1,0 +1,10 @@
+{
+  "extends": "cleanjs",
+  "parserOptions": {
+     "ecmaVersion": 2017
+  },
+  "rules":{
+    "import/no-commonjs": [0],
+    "fp/no-unused-expression": ["error", {"allowUseStrict": true }]
+  }
+}

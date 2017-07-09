@@ -1,0 +1,9 @@
+#!/usr/bin/env node
+/*eslint-disable better/no-ifs, fp/no-throw, fp/no-unused-expression */
+"use strict";
+const importer = require("./index.js");
+const argv = require('yargs').argv;
+if (!argv.startDate || !argv.currency || !argv.commodity) {
+  throw Error("Please specify currency, commodity and startDate in format YYYY-MM-DD as first argument.");
+}
+importer(argv);
