@@ -4,7 +4,7 @@
 const db = require('sqlite');
 const fetch = require('node-fetch');
 
-export default options => db.open(options.file)
+module.exports = options => db.open(options.file)
   /*eslint-disable fp/no-nil */
   .then(() => {    
     try {
